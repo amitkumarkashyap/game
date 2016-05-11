@@ -25,6 +25,9 @@ int main()
 
 	a *= b;
 
+	mat4 position = mat4::translation(vec3(2, 3, 4));
+
+
 	while (!window.closed())
 	{
 		window.clear();

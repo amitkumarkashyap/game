@@ -1,7 +1,12 @@
-﻿  vec4.cpp
-  vec3.cpp
-  vec2.cpp
-  main.cpp
+﻿  mat4.cpp
+e:\amitkashyap\code\game\game\math_func.h(11): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   Generating Code...
+  Compiling...
+  main.cpp
+e:\amitkashyap\code\game\game\math_func.h(11): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'E:\AmitKashyap\Code\game\Debug\vc120.pdb'; linking object as if no debug info
   game.vcxproj -> E:\AmitKashyap\Code\game\Debug\game.exe
   game.vcxproj -> E:\AmitKashyap\Code\game\Debug\game.pdb (Partial PDB)
