@@ -26,25 +26,39 @@ int main()
 	a *= b;
 
 	mat4 position = mat4::translation(vec3(2, 3, 4));
+	position *= mat4::identity();
 
+	position.elements[12] = 2.0f;
+
+	//Union
+	/*vec4 column = position.columns[3];
+	vec4 column1 = position.getcolumn(3);
+
+	cout << "Columns vec4 : " << column<<endl;
+	cout << "Columns vec4 : " << column<<endl;
+	
+	cout << "element[12] : " << &position.elements[12] << endl;
+	cout << "Column[3] : " << &position.columns[3] << endl;
+	
+	cout << "Column1.x : " << &column1.x << endl;*/
 
 	while (!window.closed())
 	{
 		window.clear();
 
-		cout << "Vec 4 a: "<< a << endl;
+		/*cout << "Vec 4 a: "<< a << endl;
 		cout << "Not equal " << (a!=b) << endl;
-		cout << "Vec3 "<< vector << endl;
+		cout << "Vec3 "<< vector << endl;*/
 
-		if(window.isKeyPressed(GLFW_KEY_A))
+		/*if(window.isKeyPressed(GLFW_KEY_A))
 			cout<<"KEY PRESSED"<< endl;
 
 		if (window.isMousebuttonPressed(GLFW_MOUSE_BUTTON_LEFT))
-			cout << "MOUSE PRESSED" << endl;
+			cout << "MOUSE PRESSED" << endl;*/
 
-		double x, y;
+		/*double x, y;
 		window.getMousePosition(x, y);
-		cout << "X: " << x << " Y: " << y << endl;
+		cout << "X: " << x << " Y: " << y << endl;*/
 
 #if 1
 		glBegin(GL_QUADS);
