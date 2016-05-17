@@ -95,6 +95,10 @@ namespace game {
 
 	void window::update() 
 	{
+		GLenum error = glGetError();
+		if (error != GL_NO_ERROR)
+			cout << "Open GL error: " << error << endl;
+
 		glfwPollEvents();
 		//glfwGetFramebufferSize(m_Window, &m_Width, &m_Height);
 		

@@ -35,7 +35,7 @@ namespace game {
 						float sum = 0.0f;
 						for (int e=0; e < 4; e++)
 						{
-							sum += elements[x + e * 4] * other.elements[e + y * 4];
+							sum += elements[e + y * 4] * other.elements[x + e * 4];
 						}
 						elements[x + y * 4] = sum;
 					}
@@ -45,7 +45,7 @@ namespace game {
 
 			mat4 mat4::orthographic(float left, float right, float bottom, float top, float near, float far)
 			{
-				mat4 result(0.0f);
+				mat4 result(1.0f);
 
 				result.elements[0 + 0 * 4] = 2.0f / (right - left);
 				result.elements[1 + 1 * 4] = 2.0f / (top - bottom);
